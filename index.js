@@ -27,8 +27,6 @@ function client(command) {
 function updateKey(e) {
     e = e || window.event;
 
-    console.log('Key press detected');
-
     if (e.keyCode == '87' || e.keyCode == '38') { // 'W' key or Up Arrow
         document.getElementById("upArrow").style.color = "green";
         client("FORWARD");

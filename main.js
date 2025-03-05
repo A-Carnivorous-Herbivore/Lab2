@@ -8,8 +8,10 @@ function createWindow() {
         height: 575, // Initial size (will be adjusted)
         backgroundColor: '#FFFFFF', // Set your desired background color (white in this case)
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js'),
-        },
+          nodeIntegration: true,
+          contextIsolation: false,
+          preload: path.join(__dirname, 'preload.js')
+        }
     });
 
     mainWindow.loadFile('index.html');
