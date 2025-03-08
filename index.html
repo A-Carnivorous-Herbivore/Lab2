@@ -136,7 +136,6 @@
         background-color: #f8f9fa;
         width: 300px;
         margin: 0;
-        animation: colorSwitch 15s infinite;
       }
 
       .car-info-title {
@@ -178,7 +177,6 @@
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="./index.js"></script>
   </head>
 
   <body>
@@ -189,10 +187,6 @@
     <div class="main-container">
       <div class="jumbotron">
         <h2>Vehicle Remote Control</h2>
-        <div class="input-container">
-          <input type="text" class="text-input" placeholder="Type your message here...">
-          <button class="send-button">Send</button>
-        </div>
         <div class="content-wrapper">
           <div class="arrow-container">
             <div class="arrow-button up" id="upArrow">
@@ -211,20 +205,21 @@
           <div class="car-info-box">
             <div class="car-info-title">Car Real Time Information</div>
             <div class="car-info-row">
-              <span class="car-info-label">Battery:</span>
-              <span class="car-info-value" id="battery">100%</span>
+              <span class="car-info-label">Car Speed:</span>
+              <span class="car-info-value" id="speed">0</span>
             </div>
             <div class="car-info-row">
-              <span class="car-info-label">Moving:</span>
-              <span class="car-info-value" id="moving">No</span>
+              <span class="car-info-label">Car Turning:</span>
+              <span class="car-info-value" id="turning">Straight</span>
             </div>
             <div class="car-info-row">
-              <span class="car-info-label">Turning:</span>
-              <span class="car-info-value" id="turning">No</span>
+              <span class="car-info-label">Car CPU Temp:</span>
+              <span class="car-info-value" id="cpu-temp">0</span>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
