@@ -30,11 +30,11 @@ def control_car(command):
     if command == "FORWARD":
         print("Moving forward")
         bw.speed = 50
-        bw.backward()
+        bw.forward()
     elif command == "BACKWARD":
         print("Moving backward")
         bw.speed = 50
-        bw.forward()
+        bw.backward()
     elif command == "LEFT":
         print("Turning left")
         fw.turn_left()
